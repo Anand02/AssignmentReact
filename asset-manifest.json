@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/AssignmentReact/static/css/main.8a83bdcb.chunk.css",
+    "main.js": "/AssignmentReact/static/js/main.dc93ab44.chunk.js",
+    "main.js.map": "/AssignmentReact/static/js/main.dc93ab44.chunk.js.map",
+    "runtime-main.js": "/AssignmentReact/static/js/runtime-main.9e3138b1.js",
+    "runtime-main.js.map": "/AssignmentReact/static/js/runtime-main.9e3138b1.js.map",
+    "static/css/2.ba8a852c.chunk.css": "/AssignmentReact/static/css/2.ba8a852c.chunk.css",
+    "static/js/2.c8faf359.chunk.js": "/AssignmentReact/static/js/2.c8faf359.chunk.js",
+    "static/js/2.c8faf359.chunk.js.map": "/AssignmentReact/static/js/2.c8faf359.chunk.js.map",
+    "index.html": "/AssignmentReact/index.html",
+    "precache-manifest.cf8426afbe8586fba6baffd7aed0729e.js": "/AssignmentReact/precache-manifest.cf8426afbe8586fba6baffd7aed0729e.js",
+    "service-worker.js": "/AssignmentReact/service-worker.js",
+    "static/css/2.ba8a852c.chunk.css.map": "/AssignmentReact/static/css/2.ba8a852c.chunk.css.map",
+    "static/css/main.8a83bdcb.chunk.css.map": "/AssignmentReact/static/css/main.8a83bdcb.chunk.css.map",
+    "static/js/2.c8faf359.chunk.js.LICENSE.txt": "/AssignmentReact/static/js/2.c8faf359.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/AssignmentReact/static/media/logo.5d5d9eef.svg",
+    "static/media/styles.css": "/AssignmentReact/static/media/revicons.2feb69cc.eot"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9e3138b1.js",
+    "static/css/2.ba8a852c.chunk.css",
+    "static/js/2.c8faf359.chunk.js",
+    "static/css/main.8a83bdcb.chunk.css",
+    "static/js/main.dc93ab44.chunk.js"
+  ]
+}
