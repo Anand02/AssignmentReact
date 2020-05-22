@@ -1,97 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    
-    <!-- Tell the browser it's a PWA -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <!-- Tell iOS it's a PWA -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-
-  <style>
-    .ad2hs-prompt {
-      background-color: rgb(59, 134, 196); /* Blue */
-      border: none;
-      display: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 16px;
-
-      position: absolute;
-      margin: 0 1rem 1rem;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: calc(100% - 32px);
-    }
-    
-    .ios-prompt {
-      background-color: #fcfcfc;
-      border: 1px solid #666;
-      display: none;
-      padding: 0.8rem 1rem 0 0.5rem;
-      text-decoration: none;
-      font-size: 16px;
-      color: #555;
-
-      position: absolute;
-      margin: 0 auto 1rem;
-      left: 1rem;
-      right: 1rem;
-      bottom: 0;
-    }
-  </style>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!-- <button type="button" class="ad2hs-prompt">Install Web App</button> -->
-    <div class="ios-prompt">
-      <span style="color: rgb(187, 187, 187); float: right; margin-top: -14px; margin-right: -11px;">&times;</span>
-      <img src="assets/imgs/add2home.svg" style="float: left; height: 80px; width: auto; margin-top: -8px; margin-right: 1rem;">
-      <p style="margin-top: -3px; line-height: 1.3rem;">To install this Web App in your iPhone/iPad press <img src="assets/imgs/share.svg" style="display: inline-block; margin-top: 4px; margin-bottom: -4px; height: 20px; width: auto;"> and then Add to Home Screen.</p>
-    </div>
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('worker.js').then(function(registration) {
-            console.log('Worker registration successful', registration.scope);
-          }, function(err) {
-            console.log('Worker registration failed', err);
-          }).catch(function(err) {
-            console.log(err);
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="shortcut icon" href="/reactapp/build/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><link rel="manifest" href="/reactapp/build/manifest.json"/><title>FlexiMC Solar Power Plant</title><style>.ad2hs-prompt{background-color:#3b86c4;border:none;display:none;color:#fff;padding:15px 32px;text-align:center;text-decoration:none;font-size:16px;position:absolute;margin:0 1rem 1rem;left:0;right:0;bottom:0;width:calc(100% - 32px)}.ios-prompt{display:none}.popup{position:fixed;z-index:100;display:inline-block;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;bottom:10px}.popup .popuptext{visibility:initial;width:260px;z-index:100;background-color:#555;color:#fff;text-align:center;border-radius:6px;padding:8px 0;position:absolute;z-index:1;bottom:125%;left:50%;margin-left:-130px}.popup .popuptext::after{content:"";position:absolute;top:100%;left:50%;z-index:100;margin-left:-5px;border-width:5px;border-style:solid;border-color:#555 transparent transparent transparent}#footer{text-align:center;bottom:0}</style><link href="/reactapp/build/static/css/2.26dff769.chunk.css" rel="stylesheet"><link href="/reactapp/build/static/css/main.92650cbf.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><button type="button" class="ad2hs-prompt">Install Web App</button><div class="ios-prompt"><span style="color:#bbb;float:right;margin-top:-14px;margin-right:-11px">&times;</span> <img src="assets/imgs/add2home.svg" style="float:left;height:80px;width:auto;margin-top:-8px;margin-right:1rem"><p style="margin-top:-3px;line-height:1.3rem">To install this Web App in your iPhone/iPad press <img src="assets/imgs/share.svg" style="display:inline-block;margin-top:4px;margin-bottom:-4px;height:20px;width:auto"> and then Add to Home Screen.</p></div><div id="root"></div><script type="text/javascript">if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/reactapp/build/worker.js').then(function(registration) {
+              console.log('Worker registration successful====', registration.scope);
+            }, function(err) {
+              console.log('Worker registration failed', err);
+            }).catch(function(err) {
+              console.log(err)
+            });
           });
-        });
-      } else {
-        console.log('Service Worker is not supported by browser.');
-      }
+        } else {
+          console.log('Service Worker is not supported by browser.');
+      } 
 
       function addToHomeScreen() {
             let a2hsBtn = document.querySelector(".ad2hs-prompt"); // hide our user interface that shows our A2HS button
@@ -142,17 +61,4 @@
         if (isIos() && !isInStandaloneMode()) {
             // this.setState({ showInstallMessage: true });
             showIosInstall();
-        }
-    </script>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
-</html>
+        }</script><script src="https://maps.googleapis.com/maps/api/js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/OverlappingMarkerSpiderfier/1.0.3/oms.min.js"></script><script>!function(f){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],i=0,l=[];i<n.length;i++)t=n[i],p[t]&&l.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(f[r]=o[r]);for(s&&s(e);l.length;)l.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=i(i.s=t[0]))}return e}var t={},p={1:0},c=[];function i(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return f[e].call(r.exports,r,r.exports,i),r.l=!0,r.exports}i.m=f,i.c=t,i.d=function(e,r,t){i.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(r,e){if(1&e&&(r=i(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(i.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)i.d(t,n,function(e){return r[e]}.bind(null,n));return t},i.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(r,"a",r),r},i.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},i.p="/reactapp/build/";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/reactapp/build/static/js/2.3bf8bc54.chunk.js"></script><script src="/reactapp/build/static/js/main.b222f05d.chunk.js"></script></body></html>
